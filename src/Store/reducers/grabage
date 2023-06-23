@@ -1,0 +1,193 @@
+ // block_types: [
+  //   {
+  //     id:"MODEL" ,
+  //     name: "MAIN MODEL",
+  //     type: "MODEL",
+  //     params: {},
+  //     description: "This is Main Model`",
+
+  //     layers: [
+  //       {
+  //         id: "CONVELUTION_2_1",
+  //         name: "CONVELUTION_2_1",
+  //         type: "CONV",
+  //         type_id: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["input_0"],
+  //         node_outputs: ["BLOCK1_1"],
+  //       },
+
+  //       {
+  //         id: "BLOCK1_1",
+  //         name: "BLOCK1_1",
+  //         type: "BLOCK1",
+  //         params: {},
+  //         node_inputs: ["CONVELUTION_2_1"],
+  //         node_outputs: ["output_0"],
+  //       },
+  //     ],
+  //     edges: [],
+  //   },
+
+  //   {
+  //     id: idGenerator(),
+
+  //     name: "BLOCK2",
+  //     type: "BLOCK2",
+  //     params: {},
+  //     description: "lorem ipsum is type of place holder that i love",
+
+  //     layers: [
+  //       {
+  //         id: "CONVELUTION_2_1",
+  //         name: "CONVELUTION_2_1",
+  //         type: "CONV",
+  //         type_id: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["input_0"],
+  //         node_outputs: ["BLOCK1_1"],
+  //       },
+
+  //       {
+  //         id: "BLOCK1_1",
+  //         name: "BLOCK1_1",
+  //         type: "BLOCK1",
+  //         params: {},
+  //         node_inputs: ["CONVELUTION_2_1"],
+  //         node_outputs: ["output_0"],
+  //       },
+  //     ],
+  //     edges: [],
+  //   },
+  //   {
+  //     id: idGenerator(),
+
+  //     name: "BLOCK1",
+  //     type: "BLOCK1",
+  //     description: "lorem ipsum is type of place holder that i love",
+  //     params: {},
+
+  //     layers: [
+  //       {
+  //         id: "BLOCK1_CONVELUTION_1_1",
+  //         name: "BLOCK1_CONVELUTION_1_1",
+  //         type: "CONV",
+  //         type_id: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["input_0"],
+  //         node_outputs: ["BLOCK1_CONVELUTION_1_2"],
+  //       },
+
+  //       {
+  //         id: "BLOCK1_CONVELUTION_1_2",
+  //         name: "BLOCK1_CONVELUTION_1_2",
+  //         type: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["BLOCK1_CONVELUTION_1_1"],
+  //         node_outputs: ["BLOCK1_CONVELUTION_1_4"],
+  //       },
+  //       {
+  //         id: "BLOCK1_CONVELUTION_1_3",
+  //         name: "BLOCK1_CONVELUTION_1_3",
+  //         type: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["BLOCK1_CONVELUTION_1_1"],
+  //         node_outputs: ["BLOCK1_CONVELUTION_1_5"],
+  //       },
+  //       {
+  //         id: "BLOCK1_CONVELUTION_1_4",
+  //         name: "BLOCK1_CONVELUTION_1_4",
+  //         type: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["BLOCK1_CONVELUTION_1_2"],
+  //         node_outputs: ["BLOCK1_CONCAT_1_6"],
+  //       },
+  //       {
+  //         id: "BLOCK1_CONVELUTION_1_5",
+  //         name: "BLOCK1_CONVELUTION_1_5",
+  //         type: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["BLOCK1_CONVELUTION_1_3"],
+  //         node_outputs: ["BLOCK1_CONCAT_1_6"],
+  //       },
+  //       {
+  //         id: "BLOCK1_CONCAT_1_6",
+  //         name: "BLOCK1_CONCAT_1_6",
+  //         type: "CONCAT",
+  //         params: {
+  //           dim: 1,
+  //         },
+  //         node_inputs: ["BLOCK1_CONVELUTION_1_4", "BLOCK1_CONVELUTION_1_5"],
+  //         node_outputs: ["output_0"],
+  //       },
+  //     ],
+  //     edges: [],
+  //   },
+
+  //   {
+  //     id: idGenerator(),
+
+  //     name: "BLOCK3",
+  //     type: "BLOCK3",
+  //     params: {},
+  //     description: "lorem ipsum is type of place holder that i love",
+
+  //     layers: [
+  //       {
+  //         id: "CONVELUTION_3_1",
+  //         name: "CONVELUTION_3_1",
+  //         type: "CONV",
+  //         type_id: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["input_0"],
+  //         node_outputs: ["BLOCK2_1"],
+  //       },
+  //       {
+  //         id: "BLOCK2_1",
+  //         name: "BLOCK2_1",
+  //         type: "BLOCK2",
+  //         params: {},
+  //         node_inputs: ["CONVELUTION_3_1"],
+  //         node_outputs: ["CONVELUTION_3_2"],
+  //       },
+
+  //       {
+  //         id: "CONVELUTION_3_2",
+  //         name: "CONVELUTION_3_2",
+  //         type: "CONV",
+  //         type_id: "CONV",
+  //         params: {
+  //           kernel_size: 1,
+  //           out_channel: 2,
+  //         },
+  //         node_inputs: ["BLOCK2_1"],
+  //         node_outputs: ["output_0"],
+  //       },
+  //     ],
+  //     edges: [],
+  //   },
+  // ],

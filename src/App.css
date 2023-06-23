@@ -1,0 +1,121 @@
+body {
+  margin: 0px;
+}
+.AppContainer {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  flex-flow: nowrap column;
+  overflow: hidden;
+}
+
+.panel {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.header {
+  background: #1a192b;
+  min-height: 50px;
+  width: 100%;
+}
+.footer {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+
+  justify-content: flex-start;
+  /* overflow: hidden; */
+}
+.footerArea {
+  flex-grow: 1;
+  display: flex;
+  min-height: 100px;
+  flex-flow: column;
+}
+
+.AppBody {
+  background: gray;
+  flex-grow: 3;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sideBarResizeContainer {
+  width: 30%;
+}
+.sidebar {
+  background: #1a192b;
+  min-width: 200px;
+  width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.withMargin {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex-grow: 2;
+  background: white;
+}
+
+.customHandle {
+  cursor: ew-resize;
+  width: 10px;
+  height: 100px;
+  margin: 0px -5px;
+  background: #e5e7eb;
+  border: 2px solid#e5e7eb;
+  border-radius: 2px;
+  text-align: center;
+  z-index: 99999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.customResizeBorder {
+  cursor: ew-resize;
+  width: 5px;
+  background: gray;
+  display: flex;
+  z-index: 99999;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.component-setting-item {
+  padding: 6px 12px;
+}
+.labelFlow {
+  font-size: 13px;
+  padding-bottom: 10px;
+  color: #ffffffdb;
+}
+
+.inputFlow {
+  width: 100%;
+  /* border: #ffffff1f; */
+  border: 1px solid;
+  border-width: 1px;
+  border-color: #ffffff1f;
+  background: #222138;
+  padding: 3px;
+  border-radius: 5px;
+}
+.sideMenuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 10px;
+  color: #dcdccd;
+}
